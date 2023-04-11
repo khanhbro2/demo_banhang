@@ -1,126 +1,83 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="NoiDungSp.css">
 </head>
-<style>
-	*{
-		padding: 0;
-		margin:  0;
-	}	
-	body{
-		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-		font-size: 14px;
-		line-height: 1.15;
-		color: #111;
-	}
-	#wrapper{
-		max-width:1000px;
-/*		max-height: 500px;*/
-		margin: 0 auto;
-	}
-	ul.product{
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-
-	}
-	ul.product li{
-		flex-basis: 25%;
-		padding-left: 15px;
-		padding-right: 15px;
-		box-sizing: border-box;
-		margin-bottom: 30px;
-	}
-
-	ul.product li img{
-		max-width: 100%;
-		height: 200px;
-		width: 150px;
-	}
-	ul.product li .product-top{
-		position: relative;
-		overflow:hidden;
-	}
-	ul.product li .product-top.product-1{
-		display: block;
-	}
-	ul.product li .product-top.product-1 img{
-		display: block;
-	}
-	ul.product li .product-top a.buy-now{
-		text-transform: uppercase;
-		text-decoration: none;
-		text-align: center;
-		display: block;
-		background-color: #446084;
-		color: #fff;
-		padding: 10px 0px;
-		position: absolute;
-		bottom: -36px;
-		width: 100%;
-
-	}
-	ul.product li:hover a.buy-now{
-		bottom: 0px;
-		width: 150px;
-	}
-	ul.product li .product-information {
-		padding: 3px 0px;
-
-	}
-	ul.product li .product-information a{
-		display: block;
-		text-decoration: none;
-
-	}
-
-	ul.product li .product-information a.product-cat{
-		font-size: 11px;
-		text-transform: uppercase;
-		color: #9e9e9e;
-		padding: 3px 0px ;
-	}
-
-		ul.product li .product-information a.product-name{
-		color: #334862;
-		padding: 3px 0px;		
-	}
-
-/*
-		ul.product li .product-information a.product-price{
-		color: #111;
-		padding: 3px 0px;		
-		font-weight: 600px;
-	}
-*/
-	.box-price {
-  display: flex;
-  justify-content: space-between;
-  padding: 7px;
-}
-
-.box-price .price {
-  color: red;
-}
-/*
-.box-price .sale {
-  color: white;
-  background-color: red;
-  padding: 3px;
-  border-radius: 5px;
-}
-*/
-.box-price .old-price {
-  text-decoration: line-through;
-}
-</style>
 <body>
-   
-	<div id="wrapper">
-		<ul class="product">
+    
+  
+    <div class="SanPham">
+        <div class="SanPham-Left">
+            <a class="PictureSP" href="#">
+                <img src="./tu vung.png" alt="chưa cập nhật">
+            </a>
+            <div class="GiamGia">
+                <p><h2>50%</h2></p>
+            </div>
+            
+        </div>
+        <div class="SanPham-Right">
+            <p>Tên Sách</p>
+            <hr color="green"  width="100%">
+            <div class="KhuyenMai">
+                <p> Khuyến mãi 50%</p>
+            </div>
+            <div class="MoTaSach">
+                <div class="GiaTien">
+                    <p class="GiaHienTai"><b>25000đ</b></p>
+                    <p>Giá cũ :<strike>50000đ</strike></p>
+                </div>
+            
+                <div class="MoTaNgan">
+                    <h2>Mô tả ngắn:</h2>
+                    <p>Bạn đang cầm trên tay cuốn sách của Dương Thúy. Dương Thúy không phải là Vệ Tuệ, cũng chả phải Quỳnh Dao. Hai kẻ đó viết văn, còn Dương Thúy viết người. Có thể khẳng định, viết về người rất khó, nhất là lại viết theo mồm người ấy kể. Nhưng nàng (tức Dương Thúy) đã làm được việc này một cách......</p>
+                    <p>Nhà Bán Hàng:Công Mạnh</p>
+                    <p>BarCode: 12345780</p>
+                    <p>Còn Hàng: 100 sản phảm</p>
+                    <p>Số Lượng:</p>
+                </div>
+            </div>
+        
+            <button class=" " id="" name="">
+                 <i class="ChonMua"></i>CHỌN MUA
+            </button>
+        </div>
+    </div>
+   <div class="MoTa">
+    <div>
+        <p>
+            <div class="KhungMoTa">
+                <span>Mô Tả</span><br><br>
+            </div>
+            
+            "Bạn đang cầm trên tay cuốn sách của Dương Thúy. Dương Thúy không phải là Vệ Tuệ, cũng chả phải Quỳnh Dao. Hai kẻ đó viết văn, còn Dương Thúy viết người.<br><br>
+            Có thể khẳng định, viết về người rất khó, nhất là lại viết theo mồm người ấy kể. Nhưng nàng (tức Dương Thúy) đã làm được việc này một cách... vất vả, tham lam và... đều đặn.<br><br>
+            Có thể khẳng định, gần như tất cả những người nổi tiếng ở Việt Nam, trừ Năm Cam, đã qua tay Dương Thúy. Khi lọt vào bàn tay "hộ pháp" ấy, họ bị nhào nặn, bị bóp bẹp, bị kéo căng ra, nhưng không hề bị bóp méo. Đó quả là điều kỳ diệu..." - Đạo diễn Lê Hoàng<br><br>
+            Mục lục<br><br>
+            1. Đức Huy - Đi về phía mặt trời<br>
+            2. Nhạc sĩ Bảo Chấn - Đắng cay ấy chỉ là cuộc chơi bị gãy<br>
+            3. Nhạc sĩ Trần Tiến - Tôi rất tử tế với...người tình<br>
+            4. Nhạc sĩ Phạm Duy - Vẫn không ngừng yêu<br>
+            5. Nhạc sĩ Quốc Trung - Tôi đang trở thành người vỡ mộng
+            <br>
+            6. Nguyễn Thanh Sơn - Tôi ghê gớm nhưng không đanh đá<br>
+            7. Đối thoại với Trần Huy Hoan - Về "Đàn bà xấu và thân phận của họ"<br>
+            8. Thủy Hương - Người đàn bà đa đoan<br>
+            9. Thương Tín - Những chuyện chôn chặt trong lòng<br>...
+        </p>
+        
+            </div>
+   </div>
+   <div id="KhamPhaThem">
+        <p><h1>Khám Phá Thêm</h1></p>
+        <br>
+        <hr color="blue">
+        <br>
+        <ul class="product">
 			<li>
 				<div class="product-item">
 					<div class="product-top">
@@ -264,8 +221,9 @@
 
 		</ul>
 
-	</div>
-	
 </div>
-</body>
+
+</div>  
+
+     </body>
 </html>
